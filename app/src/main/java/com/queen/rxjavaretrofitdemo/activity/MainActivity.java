@@ -6,22 +6,22 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.queen.rxjavaretrofitdemo.R;
-import com.queen.rxjavaretrofitdemo.subscribers.ProgressSubscriber;
-import com.queen.rxjavaretrofitdemo.subscribers.SubscriberOnNextListener;
 import com.queen.rxjavaretrofitdemo.entity.Subject;
 import com.queen.rxjavaretrofitdemo.http.HttpMethods;
+import com.queen.rxjavaretrofitdemo.subscribers.ProgressSubscriber;
+import com.queen.rxjavaretrofitdemo.subscribers.SubscriberOnNextListener;
 
 import java.util.List;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
 
-    @Bind(R.id.click_me_BN)
+    @BindView(R.id.click_me_BN)
     Button clickMeBN;
-    @Bind(R.id.result_TV)
+    @BindView(R.id.result_TV)
     TextView resultTV;
 
     private SubscriberOnNextListener getTopMovieOnNext;
